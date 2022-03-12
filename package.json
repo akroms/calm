@@ -4,7 +4,7 @@
   "description": "calm tailwindcss projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwindcss": "npx tailwindcss -i ./private/tailwindcss.css -o ./src/css/style.css --watch"
   },
   "keywords": [
     "html",

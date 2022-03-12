@@ -21,13 +21,17 @@
 <body>
     <!-- Navbar -->
     <nav class="container flex items-center justify-between w-11/12 md:w-9/12 py-3">
-        <img src="./src/images/logo.png" alt="logo image">
-        <div class="hidden md:block">
-            <a class="inline-block" href="#">Home</a>
-            <a class="mx-5" href="#">Archive</a>
-            <a href="#">About</a>
+        <div class="md:flex justify-between w-full items-center">
+            <img src="./src/images/logo.png" alt="logo image">
+            <div class="flex flex-col md:block mt-5 md:flex-row md:mt-0 md:justify-between hidden" id="nav-list">
+                <a class="my-1 md:mx-2" href="#">Home</a>
+                <a class="my-1 md:mx-2" href="#">Archive</a>
+                <a class="my-1 md:mx-2" href="#">About</a>
+                <a class="my-1 md:mx-2" href="#">Contact Us</a>
+                <a class="my-1 md:mx-2" href="#">News</a>
+            </div>
         </div>
-        <i class="text-2xl fa-solid fa-bars md:hidden"></i>
+        <i id="toggler" class="text-2xl fa-solid fa-bars md:hidden self-start"></i>
     </nav>
 
     <!-- Showcase -->
@@ -148,16 +152,19 @@
                     <h4 class="text-3xl">Stay in the know.</h4>
                     <p class="py-3">Sign-up to my newsletter to get an update whenever I post a new article. I try to be very mindful of not spamming my subscribers.</p>
                 </div>
-                <form class="flex-1 pt-5 md:pt-0">
+                <form class="flex-1 pt-5 md:pt-0 max-w-[450px] mx-auto">
                     <label class="text-sm" for="fname">Name:</label><br>
-                    <input class="border border-gray-300 mb-1 bg-gray-100 rounded-md focus:outline-none py-2 px-1 w-11/12" type="text" id="fname" name="fname"><br>
+                    <input class="border border-gray-300 mb-1 bg-gray-100 rounded-md focus:outline-none py-2 px-1 w-full" type="text" id="fname" name="fname"><br>
                     <label class="text-sm" for="email">Email Address:</label><br>
-                    <input class="border border-gray-300 mb-1 bg-gray-100 rounded-md focus:outline-none py-2 px-1 w-11/12" type="email" id="email" name="email"><br>
+                    <input class="border border-gray-300 mb-1 bg-gray-100 rounded-md focus:outline-none py-2 px-1 w-full" type="email" id="email" name="email"><br>
                     <input class="mt-2 bg-gray-800 py-1 px-4 text-white rounded-md" type="submit" value="Submit">
                 </form> 
             </div>
         </div>
     </div>
 
+    <!-- Script Files -->
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
